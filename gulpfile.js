@@ -50,6 +50,11 @@ function images() {
         .pipe(gulp.dest('build/assets/imgs'))
         .pipe(browserSync.stream())
 }
+function fonts() {
+    return gulp.src('src/assets/fonts/*')
+        .pipe(gulp.dest('build/assets/fonts'))
+        .pipe(browserSync.stream())
+}
 // функция js модулей
 function vendorJS() {
     return gulp.src([
